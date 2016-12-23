@@ -9,7 +9,7 @@
 
 - Sử dụng được laravel 5.3 và hiểu được các tư tưởng quan trọng nhất trong laravel.
 - Làm quen với Bootstrap 4 với các concept về html5/css3 rõ ràng hơn.
-- Sử dụng các tooldev trong laravel (composer, gulp, webpack, ...)
+- Sử dụng các tooldev trong laravel ([composer](http://getcomposer.org), [gulp/elixir](https://laravel.com/docs/5.3/elixir), webpack, ...)
 
 ## Tổng quan
 
@@ -44,8 +44,21 @@
  - Cách phân chia ứng dụng thành 2 khu vực khác nhau tạm gọi là `admin`/`frontend`
 
 ### Level 2
-_Tạo 1 branch có tên level1 từ master sau khi code xong `Level 1`_
+_Tạo 1 branch có tên level1 từ master sau khi code xong `Level 1` sau đó thực hiện tiếp level 2 trên branch master_
 - Tính năng:
- - A
- - B
+ - Thêm username
+ - Sửa thông tin user nâng cao
+ - Xóa, khôi phục user
+ - Page module
+- Yêu cầu:
+ - Thêm trường username khi đăng ký tài khoản mới. Mỗi email/username chỉ được đăng ký một lần duy nhất. Tính năng đăng nhập cho phép sử dụng email hoặc username để đăng nhập.
+ - Sửa thông tin user: Thông tin user có thể được sửa bởi chính user hoặc admin, trang sửa bởi user thì ở phía frontent, không sửa được email, username. Trong quản trị, admin cũng có thể sửa thông tin user, ở đây sẽ có thể sửa email, username.
+ - Xóa user: Trang danh sách user có thêm nút xóa, sau khi xóa, user này sẽ không hiển thị ở danh sách này mà ở 1 trang chứa danh sách các user đã bị xóa. Danh sách này có nút xóa vĩnh viễn và nút khôi phục tương ứng với mỗi user trên danh sách. Các user đã bị xóa sẽ không thể đăng nhập, nếu cố tình đăng nhập sẽ có bị đẩy ra trang chủ kèm thông báo tài khoản đã bị xóa. Email, username của người dùng đã bị xóa không thể sử dụng để đăng ký mới tài khoản.**(xem hướng dẫn sử dụng softdelete trong laravel)**
+ - Page module gồm 2 phần, quản trị và frontend. Mỗi page có thông tin : tiêu đề, nội dung, ảnh đại diện, ngày tháng tạo/cập nhật. Content nhập dạng html(sử dụng tinyMCE). Ngoài frontend có trang danh sách và chi tiết với layout như sau:
+
+ ![Danh sách page](pages/pages.png)
+
+ ![Chi tiết page](pages/page.png)
+ 
+ - Người dùng chưa đăng nhập cũng có thể xem trang danh sách và chi tiết page ngoài frontend.
 
