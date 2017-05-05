@@ -2,12 +2,12 @@
 
 ## Phiên bản
 
-- [Laravel 5.3](https://laravel.com/docs/5.3)
+- [Laravel 5.4](https://laravel.com/docs/5.4)
 - [Bootstrap v4](https://v4-alpha.getbootstrap.com)
 
 ## Mục tiêu
 
-- Sử dụng được laravel 5.3 và hiểu được các tư tưởng quan trọng nhất trong laravel.
+- Sử dụng được laravel 5.4 và hiểu được các tư tưởng quan trọng nhất trong laravel.
 - Làm quen với Bootstrap 4 với các concept về html5/css3 rõ ràng hơn.
 - Sử dụng các tooldev trong laravel ([composer](http://getcomposer.org), [gulp/elixir](https://laravel.com/docs/5.3/elixir), webpack, ...)
 
@@ -39,7 +39,7 @@
  - Không code trực tiếp js/css trực tiếp trong public(sử dụng gulp)
 
 - Mục tiêu kiến thức :
- - Làm quen laravel 5.3
+ - Làm quen laravel 5.4
  - Làm quen bootstrap4
  - Cách phân chia ứng dụng thành 2 khu vực khác nhau tạm gọi là `admin`/`frontend`
 
